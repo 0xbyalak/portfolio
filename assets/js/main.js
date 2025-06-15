@@ -78,3 +78,14 @@ document.querySelector('.contact__form').addEventListener('submit', function (e)
   });
 });
 
+// Hardening
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+document.onkeydown = function (e) {
+    if (e.keyCode == 123) return false; // F12
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) return false; // Ctrl+Shift+I/J
+    if (e.ctrlKey && e.keyCode == 85) return false; // Ctrl+U
+    if (e.ctrlKey && e.keyCode == 83) return false; // Ctrl+S
+  };
