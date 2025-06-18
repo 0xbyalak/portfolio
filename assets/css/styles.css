@@ -375,6 +375,17 @@ img {
     width: 200px;
   }
 }
+@media screen and (max-width: 576px) {
+  .skills__img {
+    display: none !important;
+  }
+  .skills.section {
+    padding-bottom: 1rem;
+  }
+  .work.section {
+    padding-top: 1rem;
+  }
+}
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
@@ -402,9 +413,6 @@ img {
     grid-template-columns: 0.7fr;
     justify-content: center;
     column-gap: 1rem;
-  }
-  .skills__img {
-    display: none !important;
   }
   .work__container {
     grid-template-columns: repeat(2, 1fr);
