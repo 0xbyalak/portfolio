@@ -478,6 +478,9 @@ img {
     align-items: center;
     text-align: initial;
   }
+  .skills__img {
+    justify-self: end;
+  }
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
